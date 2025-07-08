@@ -2,8 +2,10 @@
 import "./globals.css";
 import { themeScript } from "./theme-script";
 import { ThemeProvider } from "./context/ThemeContext";
-
+import { MouseCloudEffect } from "./components/MouseEffect";
 export default function RootLayout({ children }) {
+
+  
   return (
     <html lang="en"
     className=""
@@ -14,6 +16,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
        <ThemeProvider>
+        <MouseCloudEffect />
         {children}
         </ThemeProvider>
       </body>

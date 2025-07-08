@@ -2,9 +2,9 @@
 import { SkillItem } from "./SkillItem";
 
 export const SkillsCategory = ({ category }) => (
-  <div className="w-full  flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 relative overflow-hidden">
+  <div className=" flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 relative overflow-hidden">
     {/* Content */}
-    <div className="relative h-full z-10 w-full max-w-lg">
+    <div className="relative h-full z-10">
       <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-center transform transition-all duration-700 hover:scale-105">
         {category.category}
       </h3>

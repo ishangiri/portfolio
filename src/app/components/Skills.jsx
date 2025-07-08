@@ -86,7 +86,7 @@ const Skills = () => {
         </div>
 
         {/* Skills carousel with animated cards */}
-        <div className="relative h-full w-auto sm:h-96 overflow-hidden">
+        <div className="relative h-full sm:h-96 overflow-x-hidden">
           <div
             className="flex items-center mr-12 transition-transform duration-700 ease-in-out h-full"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
