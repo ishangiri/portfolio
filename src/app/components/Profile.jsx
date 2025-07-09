@@ -52,20 +52,15 @@ const Profile = () => {
               {/* Profile Picture */}
               <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <div className="w-full h-full bg-gradient-to-br from-blue-400 via-blue-500 to-blue-900 flex items-center justify-center">
-                  {/* Using Next.js Image component - replace with actual image path */}
                   <div className="relative w-72 h-72 rounded-full overflow-hidden">
                     <Image
-                      src="/profile.png" // Replace with your actual image path
+                      src="/profile.png" 
                       alt="Ishan Giri"
                       fill
                       className="object-cover"
                       priority
                     />
                   </div>
-                  {/* Fallback placeholder when no image is available */}
-                  {/* <div className="w-72 h-72 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 text-6xl font-bold">
-                    IG
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -80,7 +75,7 @@ const Profile = () => {
               <div className={`transform transition-all duration-1000 ease-out delay-500 ${
                 isLoaded ? 'translate-y-0 opacity-100' : '-translate-y-20 opacity-0'
               }`}>
-                <h1 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-300 to-blue-900 bg-clip-text text-transparent animate-pulse">
+                <h1 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent animate-pulse">
                   Hi, I'm Ishan
                 </h1>
               </div>
@@ -89,7 +84,7 @@ const Profile = () => {
               <div className={`transform transition-all duration-2000 ease-out delay-700 ${
                 isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
               }`}>
-                <h2 className="text-2xl lg:text-3xl font-semibold">
+                <h2 className="text-blue-900 dark:text-white text-2xl lg:text-3xl ease-out delay-700 font-semibold">
                   Full Stack Developer | Mobile Developer | Recent Graduate
                 </h2>
               </div>

@@ -135,14 +135,6 @@ const Skills = () => {
             />
           ))}
         </div>
-
-        {/* Progress Bar */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-transparent">
-          <div
-            className="h-full bg-gradient-to-r from-blue-300 to-blue-900 transition-all duration-500 ease-out"
-            style={{ width: `${((currentIndex + 1) / skillsData.length) * 100}%` }}
-          />
-        </div>
       </div>
     </div>
   );

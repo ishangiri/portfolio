@@ -25,7 +25,7 @@ export const MouseCloudEffect = () => {
         if (index > -1) {
           blobs.splice(index, 1);
         }
-      }, 3000);
+      }, 2000);
     };
 
     const handleMouseMove = (e) => {

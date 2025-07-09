@@ -48,6 +48,18 @@ const NavBar = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+const time = (() => {
+  const currentTime = new Date();
+  const options = {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false
+  };
+
+  return new Intl.DateTimeFormat('en-US', options).format(currentTime);
+})();
+
   return (
     <nav className="navbar fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,7 +71,7 @@ const NavBar = () => {
               className="text-2xl font-bold transition-colors duration-200 hover:text-blue-600 cursor-pointer"
               style={{ color: 'var(--foreground)' }}
             >
-              Ishan Giri
+              {time}
             </button>
           </div>
 
@@ -72,8 +84,8 @@ const NavBar = () => {
                   onClick={() => scrollToSection(item.href)}
                   className={`title cursor-pointer px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                     activeSection === item.href.replace('#', '')
-                      ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/20'
-                      : 'hover:bg-gray-100 dark:hover:bg-gray-800'
+                      ? 'text-blue-900 bg-blue-50 dark:bg-blue-900/20'
+                      : 'hover:bg-gray-100  dark:hover:bg-gray-800'
                   }`}
                 >
                   {item.name}
@@ -83,13 +95,12 @@ const NavBar = () => {
               {/* CTA Button */}
               <button
                 onClick={() => scrollToSection('#contact')}
-                className="bg-gray-400 cursor-pointer hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 shadow-sm hover:shadow-md"
+                className=" border-black dark:border-blue-900 hover:scale-120 border-2 cursor-pointer text px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 shadow-sm hover:shadow-md"
               >
                 Hire Me
               </button>
             </div>
-          </div>
-
+          </div> 
           {/* Theme Toggle & Mobile Menu Button */}
           <div className="flex items-center space-x-4">
             <ThemeToggle />
