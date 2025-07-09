@@ -35,22 +35,22 @@ export const ImageCarousel = ({ images, projectTitle }) => {
           <>
             <button
               onClick={previousImage}
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 cursor-pointer text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute left-0  top-1/2 transform -translate-y-1/2 cursor-pointer bg-slate-200 text-black  p-1 rounded-full  group-hover:opacity-100 transition-opacity duration-300"
             >
               <ChevronLeft size={20} />
             </button>
             <button
               onClick={nextImage}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 cursor-pointer text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2  cursor-pointer bg-slate-200 text-black  p-1 rounded-full  group-hover:opacity-100 transition-opacity duration-300"
             >
               <ChevronRight size={20} />
-            </button>
+            </button> 
           </>
         )}
         
         {/* Image indicators */}
         {images.length > 1 && (
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
             {images.map((_, index) => (
               <button
                 key={index}

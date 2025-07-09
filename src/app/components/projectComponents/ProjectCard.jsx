@@ -6,7 +6,7 @@ import { Eye, Github } from "lucide-react";
 
 export const ProjectCard = ({ project, isActive }) => {
   return (
-    <div className="flex flex-col sm:flex-row items-center sm:space-x-52">
+    <div className="flex flex-col md:flex-row items-center md:space-x-52 overflow-x-hidden">
       <div>
         <ImageCarousel images={project.images} projectTitle={project.title} />
       </div>
@@ -17,10 +17,10 @@ export const ProjectCard = ({ project, isActive }) => {
           {/* Content Section */}
           <div className="p-2 flex flex-col justify-betweenl">
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900 dark:text-white delay-600">
                 {project.title}
               </h3>
-              <p className="text-gray-900 font-semibold sm:text-sm text-xs dark:text-gray-300 mb-6 leading-relaxed">
+              <p className="text-gray-900 font-semibold sm:text-sm text-xs dark:text-gray-300 mb-6 leading-relaxed delay-700">
                 {project.description}
               </p>
               

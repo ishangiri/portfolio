@@ -23,7 +23,7 @@ export const projectsData = [
   id: 3,
   title: "YQM-WordPress Infrastructure Migration & Maintenance",
   description:
-    "Took ownership of an existing WordPress site (yourqm.com.au) and successfully migrated hosting infrastructure from legacy hosting to Google Cloud Platform. Configured a Compute Engine VM, managed DNS pointing for the custom domain, and provisioned HTTPS with Certbot using Apache. Secured the VM with SSH key access, and enabled WP-CLI for efficient backend management. Maintained and updated site content using Elementor, including structural changes (accordion content, service sections, reviews). Troubleshot and resolved issues related to broken admin login, HTTPS redirect loops, and Elementor rendering bugs. Provided end-to-end support for content revisions, UI updates, performance fixes, and plugin-related issues.",
+    "Took ownership of an existing WordPress site and successfully migrated hosting infrastructure from legacy wordpress hosting to Google Cloud Platform. Configured a Compute Engine VM, managed DNS pointing for the custom domain, and provisioned HTTPS with Certbot using Apache. Secured the VM with SSH key access, and enabled WP-CLI for efficient backend management. Maintained and updated site content using Elementor, including structural changes (accordion content, service sections, reviews). Provided end-to-end support for content revisions, UI updates, performance fixes, and plugin-related issues.",
   demoUrl: "https://yourqm.com.au",
   githubUrl: "#",
   images: ["YQM1.png", "YQM2.png", "YQM3.png", "YQM4.png"], // Add actual screenshots

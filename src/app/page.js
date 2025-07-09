@@ -8,9 +8,9 @@ const LazySkills = lazy(() => import('@/app/components/Skills'))
 
 export default function Home() {
   return (
-    <div >
+    <div className="overflow-x-hidden" >
    <NavBar />
-   <div className="sm:mt-0 flex flex-col gap-20 mt-20">
+   <div className="sm:mt-0 flex flex-col gap-10 mt-20">
    <Profile />
       <Suspense fallback={<div className="text-center text">Loading Projects...</div>}>
         <LazyProjects />

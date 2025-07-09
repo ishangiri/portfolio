@@ -49,7 +49,7 @@ color-scheme: light;
  /* Default/Light Theme variables */
 --background: #87CEFA; /* Creamy white */
 --foreground: #000000;
---card: #ffffff;
+--card: #d2f5fc;
 --card-foreground: #1a1a1a;
 --hover-foreground: #f0f0f0;
 --tag-bg: #f0f0f0;
@@ -229,7 +229,6 @@ color: var(--card-foreground);
 
 .navbar{
 background-color: var(--card);
-color: var(--card-foreground);
 padding: 1rem;
 position: fixed;
 z-index: 10;
