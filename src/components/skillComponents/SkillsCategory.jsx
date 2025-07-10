@@ -10,7 +10,7 @@ export const SkillsCategory = ({ category }) => (
       </h3>
       
       {/* Skills Grid */}
-      <div className={`grid gap-2 sm:gap-4 animate-fadeIn ${
+      <div className={`grid gap-2 sm:gap-4 scr animate-fadeIn no-scrollbar ${
         category.skills.length <= 4 
           ? 'grid-cols-2 sm:grid-cols-4' 
           : category.skills.length <= 6

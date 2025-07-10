@@ -11,7 +11,7 @@ const NavBar = () => {
     { name: "Profile", href: "#profile" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
-    {name: "Education", href: "#education"}
+    {name: "Contact Me", href: "#contact"}
   ]
 
   const toggleMenu = () => {
@@ -23,8 +23,8 @@ const NavBar = () => {
     const element = document.getElementById(sectionId.replace('#', ''))
     if (element) {
       element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+        behavior: 'auto',
+        block: 'center'
       })
     }
     setIsMenuOpen(false) // Close mobile menu after clicking
@@ -61,7 +61,12 @@ const NavBar = () => {
   };
   return new Intl.DateTimeFormat('en-US', options).format(currentTime);
 });
-setTime(time());
+
+setInterval(() => {
+    setTime(time());
+},1000)
+
+
   },[])
 
 
@@ -96,13 +101,6 @@ setTime(time());
                 </button>
               ))}
               
-              {/* CTA Button */}
-              <button
-                onClick={() => scrollToSection('#contact')}
-                className=" border-black dark:border-blue-900 hover:scale-120 border-2 cursor-pointer text px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 shadow-sm hover:shadow-md"
-              >
-                Hire Me
-              </button>
             </div>
           </div> 
           {/* Theme Toggle & Mobile Menu Button */}

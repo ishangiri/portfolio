@@ -1,14 +1,13 @@
 'use client';
 import "./globals.css";
-import { themeScript } from "./theme-script";
-import { ThemeProvider } from "./context/ThemeContext";
-import { MouseCloudEffect } from "./components/MouseEffect";
+import { themeScript } from "./script/theme-script";
+import { ThemeProvider } from "../context/ThemeContext";
+import { MouseCloudEffect } from "../components/MouseEffect";
 export default function RootLayout({ children }) {
 
   
   return (
     <html lang="en"
-    className=""
     suppressHydrationWarning
     >
       <head>

@@ -236,11 +236,18 @@ z-index: 10;
 
 html {
 scroll-behavior: smooth;
+scrollbar-width: none;
 }
 
 html {
 scroll-padding-top: 80px;
 }
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
+  }
 
 .title {
 color: var(--card-foreground);

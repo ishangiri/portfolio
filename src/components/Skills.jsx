@@ -66,7 +66,7 @@ const Skills = () => {
           isVisible ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'
         }`}
       >
-        <h2 className="text-2xl mb-6 sm:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-900">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-2 font-semibold text-blue-900 dark:text-white bg-clip-text  delay-500">
           Skills
         </h2>
       </div>

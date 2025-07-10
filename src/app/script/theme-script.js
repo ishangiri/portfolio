@@ -7,15 +7,9 @@ export const themeScript = `
  let theme = localStorage.getItem(themeKey);
  
  if (theme === null) {
- // If no theme in localStorage, use system preference
  theme = prefersDark ? 'dark' : 'light';
  }
  
- // Clear any existing theme classes first from both html and body
- htmlClassList.remove('dark', 'light');
- if (bodyClassList) {
- bodyClassList.remove('dark', 'light');
- }
  
  // Add the correct theme class to both html and body
  htmlClassList.add(theme);

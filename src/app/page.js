@@ -1,10 +1,12 @@
 "use-client";
 import { lazy, Suspense } from "react";
-import NavBar from "./components/NavBar";
-import Profile from "./components/Profile";
+import NavBar from "../components/NavBar";
+import Profile from "../components/Profile";
+import Contact from "../components/Contact";
 
-const LazyProjects = lazy(() => import('@/app/components/Projects'));
-const LazySkills = lazy(() => import('@/app/components/Skills'))
+const LazyProjects = lazy(() => import('@/components/Projects'));
+const LazySkills = lazy(() => import('@/components/Skills'));
+
 
 export default function Home() {
   return (
@@ -18,6 +20,7 @@ export default function Home() {
     <Suspense fallback={<div className="text-center text">Loading Projects...</div>}>
         <LazySkills />
       </Suspense>
+      <Contact />
    </div>
     </div>
   );
