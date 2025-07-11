@@ -1,14 +1,17 @@
-"use-client";
-import { lazy, Suspense } from "react";
+"use client";
+import { lazy, Suspense} from "react";
 import NavBar from "../components/NavBar";
 import Profile from "../components/Profile";
 import Contact from "../components/Contact";
+import DialogComponent from "@/components/DialogComponent";
 
 const LazyProjects = lazy(() => import('@/components/Projects'));
 const LazySkills = lazy(() => import('@/components/Skills'));
 
 
 export default function Home() {
+
+
   return (
     <div className="overflow-x-hidden" >
    <NavBar />

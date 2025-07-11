@@ -64,6 +64,7 @@ const FormComponent = ({onSubmit, isLoading}) => {
 
   const handleFormSubmit = (values) => {
     onSubmit(values);
+    form.reset();
   };
 
   return (

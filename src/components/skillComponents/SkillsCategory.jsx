@@ -11,8 +11,8 @@ export const SkillsCategory = ({ category }) => (
       
       {/* Skills Grid */}
       <div className={`grid gap-2 sm:gap-4 scr animate-fadeIn no-scrollbar ${
-        category.skills.length <= 4 
-          ? 'grid-cols-2 sm:grid-cols-4' 
+        category.skills.length >= 6 
+          ? 'grid-cols-2 sm:grid-cols-5' 
           : category.skills.length <= 6
           ? 'grid-cols-2 sm:grid-cols-3'
           : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4'

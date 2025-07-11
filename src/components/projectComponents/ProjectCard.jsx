@@ -4,11 +4,11 @@ import { ImageCarousel } from "./ImageCarousel";
 import { Card, CardContent } from "../ui/card";
 import { Eye, Github } from "lucide-react";
 
-export const ProjectCard = ({ project, isActive }) => {
+export const ProjectCard = ({ project, isActive, currentImageIndex, setCurrentImageIndex }) => {
   return (
     <div className="flex flex-col md:flex-row items-center md:space-x-52 overflow-x-hidden">
       <div>
-        <ImageCarousel images={project.images} projectTitle={project.title} />
+        <ImageCarousel images={project.images} projectTitle={project.title} currentImageIndex={currentImageIndex} setCurrentImageIndex={setCurrentImageIndex} />
       </div>
     <Card className={`overflow-hidden bg-transparent max-w-2xl border-none transition-all duration-700 ${
       isActive ? 'scale-100 ' : 'scale-80'
@@ -46,13 +46,13 @@ export const ProjectCard = ({ project, isActive }) => {
                 <Eye size={16} />
                 <span>Live Demo</span>
               </button>
-              <button
+              {/* <button
                 onClick={() => window.open(project.githubUrl, '_blank')}
                 className="flex items-center sm:space-x-2 space-x-1 text-xs cursor-pointer border-2 border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 md:px-6 md:py-3 px-3 py-1.5  rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <Github size={16} />
                 <span>Code</span>
-              </button>
+              </button> */}
             </div>
           </div>
       </CardContent>

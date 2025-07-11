@@ -3,8 +3,7 @@ import React from 'react'
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-export const ImageCarousel = ({ images, projectTitle }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+export const ImageCarousel = ({ images, projectTitle, currentImageIndex, setCurrentImageIndex }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const nextImage = () => {

@@ -9,6 +9,7 @@ const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Intersection Observer for animations
   useEffect(() => {
@@ -17,7 +18,7 @@ const Projects = () => {
         setIsVisible(entry.isIntersecting);
       },
       {
-        threshold: 0.3,
+        threshold: 0.5,
       }
     );
 
@@ -31,10 +32,12 @@ const Projects = () => {
 
   const nextProject = () => {
     setCurrentIndex((prev) => (prev + 1) % projectsData.length);
+    setCurrentImageIndex(0);
   };
 
   const previousProject = () => {
     setCurrentIndex((prev) => (prev - 1 + projectsData.length) % projectsData.length);
+    setCurrentImageIndex(0);
   };
 
   return (
@@ -45,7 +48,7 @@ const Projects = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-2 font-semibold text-blue-900 dark:text-white bg-clip-text  delay-500">
-            My Projects
+            Relevant Projects
           </h2>
         </div>
 
@@ -57,6 +60,8 @@ const Projects = () => {
             <ProjectCard
               project={projectsData[currentIndex]}
               isActive={true}
+              currentImageIndex={currentImageIndex}
+              setCurrentImageIndex={setCurrentImageIndex}
             />
           </div>
 
