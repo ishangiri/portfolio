@@ -5,6 +5,10 @@ import { ThemeProvider } from "../context/ThemeContext";
 import { MouseCloudEffect } from "../components/MouseEffect";
 import Preloader from "@/components/PreLoader";
 import ThemeScrollBackground from "@/components/ThemeScrollBackground";
+import { Analytics } from "@vercel/analytics/next"
+
+
+
 export default function RootLayout({ children }) {
 
   
@@ -19,6 +23,7 @@ export default function RootLayout({ children }) {
        <ThemeProvider>
         <MouseCloudEffect />
         <Preloader />
+        <Analytics />
         <ThemeScrollBackground>
         {children}
         </ThemeScrollBackground>

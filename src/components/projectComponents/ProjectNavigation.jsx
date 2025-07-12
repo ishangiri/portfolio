@@ -19,9 +19,6 @@ export const ProjectNavigation = ({ currentIndex, totalProjects, onPrevious, onN
                 ? 'bg-blue-600 scale-125'
                 : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500 cursor-pointer'
             }`}
-            onClick={() => {
-              currentIndex == index
-            }}
           />
         ))}
       </div>

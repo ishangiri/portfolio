@@ -2,6 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 export const ImageCarousel = ({ images, projectTitle, currentImageIndex, setCurrentImageIndex }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,10 +22,13 @@ export const ImageCarousel = ({ images, projectTitle, currentImageIndex, setCurr
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <img
+        <Image
+        loading='lazy'
+        width={500}
+        height={500}
           src={images[currentImageIndex]}
           alt={`${projectTitle} - Image ${currentImageIndex + 1}`}
-          className={`sm:w-[700px] sm:h-[700px] cursor-pointer  h-full sm:object-contain object-cover transition-transform duration-500 ${
+          className={`sm:w-[900px] sm:h-[900px] cursor-pointer  h-full sm:object-contain object-cover transition-transform duration-500 ${
             isHovered ? 'scale-110' : 'scale-100'
           }`}
         />

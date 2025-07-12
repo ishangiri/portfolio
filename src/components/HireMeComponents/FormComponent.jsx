@@ -79,7 +79,7 @@ const FormComponent = ({onSubmit, isLoading}) => {
                 isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
               }`}>
                 <h3 className='text-3xl sm:text-4xl lg:text-5xl mb-2 font-semibold text-blue-900 dark:text-white bg-clip-text'>
-                  Contact your dev
+                  Contact for any inquiries
                 </h3>
               </div>
               
@@ -134,7 +134,7 @@ const FormComponent = ({onSubmit, isLoading}) => {
                       <FormControl>
                         <textarea 
                           className={'border-2 rounded-lg md:h-32 h-32 w-full cursor-pointer px-3 py-2'} 
-                          placeholder="Your message" 
+                          placeholder="Your inquiry" 
                           {...field} 
                         />
                       </FormControl>

@@ -6,7 +6,7 @@ import { Eye, Github } from "lucide-react";
 
 export const ProjectCard = ({ project, isActive, currentImageIndex, setCurrentImageIndex }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center md:space-x-52 overflow-x-hidden">
+    <div className="flex flex-col md:flex-row items-center md:space-x-36 overflow-x-hidden">
       <div>
         <ImageCarousel images={project.images} projectTitle={project.title} currentImageIndex={currentImageIndex} setCurrentImageIndex={setCurrentImageIndex} />
       </div>
