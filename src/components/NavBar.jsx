@@ -71,27 +71,22 @@ setInterval(() => {
 
 
   return (
-    <nav className="navbar h-20 md:h-auto fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+    <nav className="h-30 md:h-auto fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand */}
-          <div className="flex-shrink-0">
-            <button 
-              onClick={() => scrollToSection('#home')}
-              className="md:text-2xl font-bold transition-colors text duration-200 hover:text-blue-600 cursor-pointer"
-            >
+          <div className="flex-shrink-0 text-yellow-400 dark:text-gray-300  items-center font-bold md:text-xl">
               {time}
-            </button>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden border-b-2 p-4 border-yellow-400 dark:border-gray-300 md:block">
             <div className="flex items-center space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`cursor-pointer px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
+                  className={`cursor-pointer px-3 py-2 rounded-lg text-md font-semibold transition-all duration-200 ${
                     activeSection === item.href.replace('#', '')
                       ? 'dark:text-blue-900 bg-blue-50 dark:bg-slate-400'
                       : 'hover:bg-gray-100  dark:hover:bg-gray-800'

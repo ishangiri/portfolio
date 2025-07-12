@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 // Project Navigation Component
 export const ProjectNavigation = ({ currentIndex, totalProjects, onPrevious, onNext }) => {
   return (
-    <div className="flex items-center justify-center space-x-6">
+    <div className="flex items-center justify-center space-x-8">
       <button
         onClick={onPrevious}
         className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl cursor-pointer transition-all duration-300 transform hover:scale-110 border border-gray-200 dark:border-gray-700"

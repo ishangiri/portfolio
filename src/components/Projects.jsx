@@ -41,17 +41,8 @@ const Projects = () => {
   };
 
   return (
-    <div ref={containerRef} id="projects" className="min-h-screen flex items-center justify-center overflow-x-hidden">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className={`text-center transform transition-all duration-1000 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-2 font-semibold text-blue-900 dark:text-white bg-clip-text  delay-500">
-            Relevant Projects
-          </h2>
-        </div>
-
+    <div ref={containerRef} id="projects" className=" flex items-center justify-center overflow-x-hidden ">
+      <div className="mx-auto px-2 sm:px-4 lg:px-6">
         {/* Projects Carousel */}
         <div className={`relative transform transition-all duration-1000 delay-300 ${
           isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'

@@ -16,9 +16,9 @@ export const ImageCarousel = ({ images, projectTitle, currentImageIndex, setCurr
   };
 
   return (
-    <div className="relative h-full">
+    <div className="relative">
       <div 
-        className="relative h-full overflow-hidden rounded-lg group scale-100"
+        className="relative  overflow-hidden rounded-lg group scale-100"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -28,7 +28,7 @@ export const ImageCarousel = ({ images, projectTitle, currentImageIndex, setCurr
         height={500}
           src={images[currentImageIndex]}
           alt={`${projectTitle} - Image ${currentImageIndex + 1}`}
-          className={`sm:w-[900px] sm:h-[900px] cursor-pointer  h-full sm:object-contain object-cover transition-transform duration-500 ${
+          className={`md:w-[800px] md:h-[800px] cursor-pointer  h-full sm:object-contain object-cover transition-transform duration-500 ${
             isHovered ? 'scale-110' : 'scale-100'
           }`}
         />

@@ -78,7 +78,7 @@ const FormComponent = ({onSubmit, isLoading}) => {
               <div className={`transform transition-all duration-1000 ease-out delay-200 ${
                 isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
               }`}>
-                <h3 className='text-3xl sm:text-4xl lg:text-5xl mb-2 font-semibold text-blue-900 dark:text-white bg-clip-text'>
+                <h3 className='text-3xl sm:text-4xl lg:text-5xl mb-2 font-semibold  dark:text-gray-300 bg-clip-text'>
                   Contact for any inquiries
                 </h3>
               </div>
@@ -94,7 +94,7 @@ const FormComponent = ({onSubmit, isLoading}) => {
                     <FormItem>
                       <FormLabel>Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your Name" {...field} />
+                        <Input className={"border-black dark:border-gray-400"} placeholder="Your Name" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -113,7 +113,7 @@ const FormComponent = ({onSubmit, isLoading}) => {
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your Email" {...field} />
+                        <Input className={"border-black dark:border-gray-400"} placeholder="Your Email" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -133,7 +133,7 @@ const FormComponent = ({onSubmit, isLoading}) => {
                       <FormLabel>Inquiry</FormLabel>
                       <FormControl>
                         <textarea 
-                          className={'border-2 rounded-lg md:h-32 h-32 w-full cursor-pointer px-3 py-2'} 
+                          className={'border-2 rounded-lg md:h-32 h-32 w-full cursor-pointer px-3 py-2 border-black dark:border-gray-400'} 
                           placeholder="Your inquiry" 
                           {...field} 
                         />

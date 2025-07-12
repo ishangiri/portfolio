@@ -9,7 +9,7 @@ const ThemeContext = createContext({
 
 export const ThemeProvider = ({ children }) => {
   // Always start with null to match server rendering
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState("dark");
   const [isHydrated, setIsHydrated] = useState(false);
 
   // Effect to hydrate and sync with localStorage/DOM after mount

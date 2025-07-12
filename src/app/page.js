@@ -18,7 +18,9 @@ export default function Home() {
    <div className="sm:mt-0 flex flex-col gap-10 mt-20">
    <Profile />
       <Suspense fallback={<div className="text-center text">Loading Projects...</div>}>
+      <div className="mt-0">
         <LazyProjects />
+        </div>
       </Suspense>
     <Suspense fallback={<div className="text-center text">Loading Projects...</div>}>
         <LazySkills />
