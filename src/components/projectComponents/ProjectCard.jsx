@@ -11,7 +11,7 @@ export const ProjectCard = ({ project, isActive, currentImageIndex, setCurrentIm
       <div>
         <ImageCarousel images={project.images} projectTitle={project.title} currentImageIndex={currentImageIndex} setCurrentImageIndex={setCurrentImageIndex} />
       </div>
-    <Card className={`overflow-hidden bg-transparent max-w-2xl border-none transition-all duration-700 ${
+    <Card className={`overflow-hidden bg-transparent max-w-xl border-none transition-all duration-700 ${
       isActive ? 'scale-100 ' : 'scale-80'
     }`}>
       <CardContent>

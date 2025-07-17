@@ -42,7 +42,6 @@ export const skillsData = [
       { name: "React", logo: <ReactOriginal size={32} /> },
       { name: "Next.js", logo: <NextjsOriginal size={32} /> },
       { name: "React Native", logo: <ReactOriginal size={32} /> },
-      { name: "Angular", logo: <AngularOriginal size={32} /> }
     ]
   },
   {
@@ -100,7 +99,7 @@ export const skillsData = [
       { name: "ChatGPT" },
       { name: "GitHub Copilot", logo: <GithubOriginalWordmark size={32} /> },
       { name: "Data Visualization" },
-      {name : "Basic of Neural Networks"}
+      {name : "Neural Networks Basics"},
     ]
   }
 ];

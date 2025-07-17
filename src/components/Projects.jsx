@@ -41,7 +41,7 @@ const Projects = () => {
   };
 
   return (
-    <div ref={containerRef} id="projects" className=" flex items-center justify-center overflow-x-hidden ">
+    <div ref={containerRef} id="projects" className=" flex items-center justify-center min-h-screen overflow-x-hidden ">
       <div className="mx-auto px-2 sm:px-4 lg:px-6">
         {/* Projects Carousel */}
         <div className={`relative transform transition-all duration-1000 delay-300 ${

@@ -78,7 +78,7 @@ const FormComponent = ({onSubmit, isLoading}) => {
               <div className={`transform transition-all duration-1000 ease-out delay-200 ${
                 isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
               }`}>
-                <h3 className='text-3xl sm:text-4xl lg:text-5xl mb-2 font-semibold  dark:text-gray-300 bg-clip-text'>
+                <h3 className='text-xl sm:text-4xl lg:text-5xl mb-2 font-semibold  dark:text-gray-300 bg-clip-text'>
                   Contact for any inquiries
                 </h3>
               </div>
@@ -148,7 +148,7 @@ const FormComponent = ({onSubmit, isLoading}) => {
               <div className={`flex items-center justify-center mt-2 transform transition-all duration-1000 ease-out delay-1000 ${
                 isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-50 opacity-0'
               }`}>
-                <Button className={'md:w-2xl px-8 cursor-pointer py-3 bg-none border-2 text hover:border-black dark:hover:border-white bg-transparent hover:bg-transparent'} type="submit">{isLoading? "Submitting...." : "Submit"}</Button>
+                <Button className={'md:w-2xl px-8 cursor-pointer border-black dark:border-gray-200 py-3 bg-none border-2 text hover:border-black dark:hover:border-white bg-transparent hover:bg-transparent'} type="submit">{isLoading? "Submitting...." : "Submit"}</Button>
                 
               </div>
               
