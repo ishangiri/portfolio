@@ -10,6 +10,7 @@ print("Python is running in the browser!")`)
   const [output, setOutput] = useState('Loading Pyodide...')
   const [isLoading, setIsLoading] = useState(true)
 
+
   useEffect(() => {
     const loadPyodideScript = async () => {
       // Check if Pyodide is already loaded

@@ -31,7 +31,7 @@ const handleModalClick = () => {
 
   return (
     <div id='contact'>
-      <DialogComponent setOpen={setIsOpen} open={isOpen} onClick={handleModalClick} />
+      <DialogComponent setOpen={setIsOpen} open={isOpen} onClick={handleModalClick} title="Form Submission Successful" desc="Thank you for contacting, I will reply to you soon." />
       <FormComponent isLoading={isLoading} onSubmit={handleSubmit} />
     </div>
   )

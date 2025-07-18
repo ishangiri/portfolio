@@ -13,8 +13,8 @@ export const projectsData = [
     id: 2,
     title: "NIB-Rewards",
     description: "Collaborated with a fellow developer as part of a university project to build a fully functional mobile app using react native. Focused on building a robust, scalable, and responsive UI with consistent design across both iOS and Android. Integrated Firebase Authentication for secure user login and Firestore for real-time, cloud-hosted data storage. Followed best practices for component architecture, state management, and performance optimization.",
-    demoUrl: "none",
     githubUrl: "private",
+    demoUrl: "none",
     images: ["/NIB.jpg", "/NIB.jpg"], // Replace with actual screenshot
     tags: ["React Native", "Firebase", "Firestore", "Android"],
     featured: false

@@ -13,15 +13,15 @@ import {
 import React from 'react'
 import { Button } from "./ui/button"
 
-const DialogComponent = ({onClick, open, setOpen}) => {
+const DialogComponent = ({onClick, open, setOpen, title, desc}) => {
   return (
     <div>
   <Dialog open={open} onOpenChange={setOpen}>
   <DialogContent>
     <DialogHeader>
-      <DialogTitle>Thank you for contacting.</DialogTitle>
+      <DialogTitle>{title}</DialogTitle>
       <DialogDescription className={"text"}>
-         Your form has been successfully submitted. You will soon hear from me.  
+         {desc} 
       </DialogDescription>
     </DialogHeader>
     <DialogFooter>

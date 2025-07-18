@@ -3,11 +3,26 @@
 import { ImageCarousel } from "./ImageCarousel";
 import { Card, CardContent } from "../ui/card";
 import { Eye, Github } from "lucide-react";
+import { useState } from "react";
+import DialogComponent from "../DialogComponent";
 
 export const ProjectCard = ({ project, isActive, currentImageIndex, setCurrentImageIndex }) => {
+
+  const [modal, setModal] = useState(false);
+
+
+  const handleClick = (demoUrl) => {
+    if (!(demoUrl === "none")){
+         window.open(demoUrl, "blank")
+         return
+    }
+    setModal(true)
+  }
+
   return (
   
     <div className="flex flex-col lg:flex-row items-center md:space-x-36 overflow-x-hidden">
+      <DialogComponent open={modal} setOpen={setModal} onClick={() => setModal(false)} title="Project Not Available" desc="This project doesn't have a live demo available." />
       <div>
         <ImageCarousel images={project.images} projectTitle={project.title} currentImageIndex={currentImageIndex} setCurrentImageIndex={setCurrentImageIndex} />
       </div>
@@ -41,7 +56,7 @@ export const ProjectCard = ({ project, isActive, currentImageIndex, setCurrentIm
             {/* Action Buttons */}
             <div className="flex space-x-3">
               <button
-                onClick={() => window.open(project.demoUrl, '_blank')}
+                onClick={() => handleClick(project.demoUrl)}
                 className="flex items-center sm:space-x-2 space-x-1 cursor-pointer text-xs bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white md:px-6 md:py-3 px-3 py-1.5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 <Eye size={16} />
