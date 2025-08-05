@@ -48,6 +48,7 @@ const Projects = () => {
           isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
         }`}>
           <div>
+            <p className="sm:hidden text-center mb-6 font-bold ">Relevant Projects</p>
             <ProjectCard
               project={projectsData[currentIndex]}
               isActive={true}
