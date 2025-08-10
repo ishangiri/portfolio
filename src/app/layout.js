@@ -2,7 +2,6 @@
 import "./globals.css";
 import { ThemeProvider } from "../context/ThemeContext";
 import { MouseCloudEffect } from "../components/MouseEffect";
-import Preloader from "@/components/PreLoader";
 import ThemeScrollBackground from "@/components/ThemeScrollBackground";
 import { Analytics } from "@vercel/analytics/next"
 import { useEffect } from "react";
@@ -21,7 +20,6 @@ export default function RootLayout({ children }) {
       <body className="overflow-x-hidden">
        <ThemeProvider>
         <MouseCloudEffect />
-        <Preloader />
         <Analytics />
         <ThemeScrollBackground>
         {children}
