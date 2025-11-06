@@ -5,13 +5,14 @@ import Profile from "../components/Profile";
 import Contact from "../components/Contact";
 const LazyProjects = lazy(() => import('@/components/Projects'));
 const LazySkills = lazy(() => import('@/components/Skills'));
+import { Experience } from "@/components/Experience";
 
 const portfolioNavItems = [
     { name: "Profile", href: "#profile" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
-    { name: "Contact Me", href: "#contact" },
-    // { name: "Play Games", href: "/playgames" }
+    { name: "Experience", href: "#experience" },
+    { name: "Contact Me", href: "#contact" }
   ]
 
  const ctaButton = { name: "Hire Me", href: "#contact" }
@@ -35,6 +36,7 @@ export default function Home() {
     <Suspense fallback={<div className="text-center text">Loading Skills...</div>}>
         <LazySkills />
       </Suspense>
+    <Experience />
       <Contact />
    </div>
     </div>
