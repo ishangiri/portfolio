@@ -15,24 +15,23 @@ return (
         <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
           IT Low-Code Developer
         </h3>
-        <p className="text-gray-600 dark:text-gray-400 mt-1">Employment, ETC • July 2024 – Present</p>
+        <p className="text-gray-600 dark:text-gray-400 mt-1">ETC | Southport • Sep 2025 – Dec 2025</p>
 
         <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700 dark:text-gray-300">
           <li>
-            Supported the Innovation and Technology team by integrating low-code automation
-            solutions across multiple internal systems.
+           Built and automated workflow solutions using Laserfiche Forms to streamline internal operations.
           </li>
           <li>
-            Designed and implemented digital forms and automated workflows in <span className="font-medium">Laserfiche</span>,
-            improving operational efficiency and data management processes.
+            Supported the Innovation Team in developing AI agents and process automation using Microsoft Copilot Studio.
           </li>
           <li>
-            Contributed to the development of AI-powered agents using <span className="font-medium">Copilot Studio</span>,
-            focusing on enhancing internal support capabilities and user interaction workflows.
+       Triaged and resolved internal support tickets via Freshservice, improving response efficiency and issue tracking.
           </li>
           <li>
-            Provided IT support and collaborated cross-functionally to streamline issue resolution,
-            align system requirements, and ensure consistent delivery of innovative solutions.
+         Collaborated across teams to implement low-code solutions, enhancing productivity and digital adoption.
+          </li>
+          <li>
+            Gained exposure to Microsoft 365 suite, workflow design, and low-code automation best practices.
           </li>
         </ul>
       </div>

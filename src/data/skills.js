@@ -1,7 +1,6 @@
 // skillsData.js
 import {
   AmazonwebservicesOriginalWordmark,
-  AngularOriginal,
   BootstrapOriginal,
   ConfluenceOriginal,
   Css3OriginalWordmark,
@@ -9,7 +8,6 @@ import {
   ExpressOriginal,
   FastapiOriginal,
   FirebaseOriginal,
-  GithubOriginalWordmark,
   GitOriginalWordmark,
   GooglecloudOriginal,
   GraphqlPlainWordmark,
@@ -69,7 +67,6 @@ export const skillsData = [
     skills: [
       { name: "Jira", logo: <JiraOriginal size={32} /> },
       { name: "Confluence", logo: <ConfluenceOriginal size={32} /> },
-      {name: "Sprint Planning"},
       {name: "Agile Methodologies"}
     ]
   },
@@ -79,8 +76,6 @@ export const skillsData = [
       { name: "Tailwind CSS", logo: <TailwindcssOriginal size={32} /> },
       { name: "CSS3", logo: <Css3OriginalWordmark size={32} /> },
       { name: "Bootstrap", logo: <BootstrapOriginal size={32} /> },
-      { name: "Shadcn UI" } ,
-      {name: "Responsive Design"},
     ]
   },
   {
@@ -88,19 +83,8 @@ export const skillsData = [
     skills: [
       { name: "GCP", logo: <GooglecloudOriginal size={32} /> },
       { name: "Vercel", logo: <VercelOriginal size={32} /> },
-      { name: "Render" }, 
       { name: "AWS", logo: <AmazonwebservicesOriginalWordmark size={32} /> }
     ]
   },
-  {
-    category: "AI & ML Integration",
-    skills: [
-      { name: "OpenAI API" },
-      { name: "ChatGPT" },
-      { name: "GitHub Copilot", logo: <GithubOriginalWordmark size={32} /> },
-      { name: "Data Visualization" },
-      {name : "Neural Networks Basics"},
-    ]
-  }
 ];
 
