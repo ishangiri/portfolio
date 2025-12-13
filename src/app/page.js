@@ -6,7 +6,7 @@ import Contact from "../components/Contact";
 const LazyProjects = lazy(() => import('@/components/Projects'));
 const LazySkills = lazy(() => import('@/components/Skills'));
 import { Experience } from "@/components/Experience";
-import ZapierChatbot from "@/components/Chatbot";
+import N8nChatbot from "@/components/Chatbot";
 const portfolioNavItems = [
     { name: "Profile", href: "#profile" },
     { name: "Projects", href: "#projects" },
@@ -36,7 +36,7 @@ export default function Home() {
     <Suspense fallback={<div className="text-center text">Loading Skills...</div>}>
         <LazySkills />
       </Suspense>
-      <ZapierChatbot />
+      <N8nChatbot />
     <Experience />
     
       <Contact />

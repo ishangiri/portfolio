@@ -3,7 +3,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
 :root {
+
   /* Default/Light Theme variables */
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
@@ -40,6 +42,7 @@
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
     cursor: grabbing;
+
 }
 
 .light {
@@ -50,6 +53,7 @@
   --hover-foreground: #f0f0f0;
   --tag-bg: #f0f0f0;
   color-scheme: light;
+
 }
 
 .dark {
@@ -87,6 +91,7 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+
 }
 
 /* Apply variables to base elements */
@@ -676,27 +681,4 @@ html {
 .focus-ring:focus {
   outline: 2px solid var(--ring);
   outline-offset: 2px;
-}
-
-/* Print styles */
-@media print {
-  .dark-starfield,
-  .light-clouds,
-  .moon,
-  .sun,
-  .aurora,
-  .weather-particles,
-  .particle-field {
-    display: none !important;
-  }
-  
-  body {
-    background: white !important;
-    color: black !important;
-  }
-  
-  .card {
-    border: 1px solid black !important;
-    background: white !important;
-  }
 }
