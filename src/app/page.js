@@ -36,7 +36,7 @@ export default function Home() {
     <Suspense fallback={<div className="text-center text">Loading Skills...</div>}>
         <LazySkills />
       </Suspense>
-      <N8nChatbot />
+      {/* <N8nChatbot /> */}
     <Experience />
     
       <Contact />

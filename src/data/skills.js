@@ -48,18 +48,7 @@ export const skillsData = [
       { name: "MySQL", logo: <MysqlOriginal size={32} /> },
       { name: "PostgreSQL", logo: <PostgresqlOriginal size={32} /> },
       { name: "MongoDB", logo: <MongodbOriginal size={32} /> },
-      { name: "DynamoDB", logo: <DynamodbOriginal size={32} /> },
       {name: "Git", logo:<GitOriginalWordmark/>},
-    ]
-  },
-  {
-    category: "API Development, Auth & Testing",
-    skills: [
-      { name: "REST API", }, 
-      { name: "Postman", logo : <PostmanOriginal size={32} /> },   
-      {name: "GraphQL", logo : <GraphqlPlainWordmark size={32}/>},
-      { name: "JWT Authentication", logo : <JsonPlain size={32}/> },
-      {name: "Firebase Auth", logo: <FirebaseOriginal/>}
     ]
   },
   {
@@ -67,7 +56,6 @@ export const skillsData = [
     skills: [
       { name: "Jira", logo: <JiraOriginal size={32} /> },
       { name: "Confluence", logo: <ConfluenceOriginal size={32} /> },
-      {name: "Agile Methodologies"}
     ]
   },
   {
