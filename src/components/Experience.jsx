@@ -13,7 +13,7 @@ return (
       {/* ETC Experience */}
       <div className="bg-transparent border border-gray-200 dark:border-gray-700 rounded-2xl p-6 transition-colors duration-300">
         <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
-          IT Low-Code Developer
+          Innovation Support Officer
         </h3>
         <p className="text-gray-600 dark:text-gray-400 mt-1">ETC | Southport • Sep 2025 – Dec 2025</p>
 
@@ -35,8 +35,12 @@ return (
           </li>
         </ul>
       </div>
+
+      
     </div>
   </section>
+
+  
 );
 
 

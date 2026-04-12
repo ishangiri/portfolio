@@ -56,14 +56,14 @@ const Profile = () => {
               } hover:scale-105 transition-transform duration-300 animate-bounce-slow`}
             >
               {/* Profile Picture */}
-              <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
-                <div className="w-full h-full bg-gradient-to-br from-blue-400 via-blue-500 to-blue-900 flex items-center justify-center">
-                  <div className="relative w-72 h-72 rounded-full overflow-hidden">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-1 border-white shadow-xl">
+                <div className="w-90 h-105 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-900 flex items-center justify-center">
+                  <div className="relative w-90 h-full rounded-full overflow-hidden">
                     <Image
-                      src="/profile.png"
+                      src="/profile.jpg"
                       alt="Ishan Giri"
                       fill
-                      className="object-cover"
+                      className="object-cover h-full w-full"
                       priority
                     />
                   </div>
@@ -102,7 +102,7 @@ const Profile = () => {
                 }`}
               >
                 <h2 className="text-blue-900 dark:text-white text-2xl lg:text-3xl ease-out delay-700 font-semibold">
-                  Full Stack Developer | Recent Graduate
+                  IT Support | Junior Developer | Technical Support
                 </h2>
               </div>
 
@@ -115,15 +115,13 @@ const Profile = () => {
                 }`}
               >
                 <p className=" sm:text-sm text-xs leading-relaxed">
-                  Hi, I'm Ishan Giri — a 22-year-old tech enthusiast originally
-                  from Nepal, now based in Gold Coast, Australia. I didn’t grow
-                  up with a clear dream or career plan, but my curiosity for
-                  technology and passion for problem-solving naturally drew me
-                  towards software development. What started as playing games
-                  and tinkering with tech turned into a dedicated journey of
-                  learning and building. Today, I’m grinding hard to carve out
-                  my place in the tech industry, eager to grow and make an
-                  impact with code.
+                Hi, I’m Ishan Giri, a Software Developer and IT professional based in Australia, originally from Nepal, and currently preparing to relocate to Tasmania.
+
+My journey into tech wasn’t planned, it was driven by curiosity. What started as an interest in games and experimenting with technology evolved into a focused path in software development and problem-solving. Over time, I’ve built hands-on experience across full stack development, automation, and IT support, working with modern technologies to create practical, scalable solutions.
+
+I enjoy turning ideas into working products, whether that’s building web applications, streamlining workflows, or integrating AI-driven features to improve efficiency. I’m particularly interested in roles where I can contribute across both development and technical support, delivering value from day one.
+
+Right now, I’m focused on securing opportunities where I can grow, take ownership, and make a measurable impact, while continuing to expand my expertise in real-world systems and production environments.
                 </p>
               </div>
 
